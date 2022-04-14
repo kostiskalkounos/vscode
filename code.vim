@@ -90,8 +90,8 @@ nnoremap <unique> <silent> <Esc> :nohlsearch<cr>
 nnoremap <unique> <silent> j gj
 nnoremap <unique> <silent> k gk
 vnoremap <unique> <silent> < <gv
-vnoremap <unique> <silent> <leader>p "_dP
+vnoremap <unique> <silent> <leader>p p
 vnoremap <unique> <silent> > >gv
 vnoremap <unique> <silent> j gj
 vnoremap <unique> <silent> k gk
-vnoremap <unique> <silent> p pgvy
+vnoremap <unique> <silent> p "_dP
