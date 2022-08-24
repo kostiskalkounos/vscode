@@ -11,6 +11,7 @@ set ff=unix
 set foldlevelstart=99
 set foldmethod=indent
 set hidden
+set hlsearch
 set ignorecase
 set inccommand=split
 set incsearch
