@@ -70,7 +70,7 @@ $global:PSColor.File.Directory.Color = "Blue"
 $global:PSColor.File.Executable.Color = "Green"
 $global:PSColor.File.Hidden.Color = "White"
 
-Set-PsFzfOption -PSReadlineChordReverseHistory 'Ctrl+r'
+#Set-PsFzfOption -PSReadlineChordReverseHistory 'Ctrl+r'
 
 $env:FZF_ALT_C_COMMAND="fd -t d --hidden --follow --exclude '.git' --exclude '{node_modules,vendor,.npm,.cache,.venv}' . $HOME"
 $env:FZF_CTRL_T_COMMAND='rg --files --hidden --follow --no-ignore -g "!{.git,.cache,.clangd,.venv,.DS_Store,build,node_modules,vendor,package-lock.json,yarn.lock}" 2> /dev/null'
@@ -78,30 +78,18 @@ $env:FZF_DEFAULT_COMMAND=$env:FZF_CTRL_T_COMMAND
 $env:FZF_DEFAULT_OPTS='--bind=alt-k:up,alt-j:down,alt-p:up,alt-n:down --info=hidden --color=dark --color=fg:-1,bg:-1,hl:#c27fd7,fg+:#ffffff,bg+:-1,hl+:#d658fe --color=info:#68aee8,prompt:#68aee8,pointer:#c27fd7,marker:#68aee8,spinner:#68aee8,header:#68aee8'
 $env:RIPGREP_CONFIG_PATH="C:\Users\konstantinos.kalkoun\.ripgreprc"
 
-oh-my-posh init pwsh --config 'C:\Users\konstantinos.kalkoun\scoop\apps\oh-my-posh\current\themes\kostis.omp.json' | Invoke-Expression
+#oh-my-posh init pwsh --config 'C:\Users\konstantinos.kalkoun\scoop\apps\oh-my-posh\current\themes\kostis.omp.json' | Invoke-Expression
 
-# function Write-BranchName () {
-#   try {
-#     $branch = git rev-parse --abbrev-ref HEAD
-#     if ($branch -eq "HEAD") {
-#       $branch = git rev-parse --short HEAD
-#       Write-Host " $branch" -NoNewLine -ForegroundColor Green
-#     }
-#     else {
-#       Write-Host " $branch" -NoNewLine -ForegroundColor Green
-#     }
-#   } catch {
-#     Write-Host " no branches yet" -NoNewLine -ForegroundColor Green
-#   }
-# }
-#
-# function Prompt {
-#   $userPrompt = "$('' * ($nestedPromptLevel + 1)) "
-#   $path = "$($executionContext.SessionState.Path.CurrentLocation)"
-#   Write-Host "$env:computername ".toLower() -NoNewline -ForegroundColor Magenta
-#   Write-Host $path -NoNewline -ForegroundColor Blue
-#   if (Test-Path .git) {
-#     Write-BranchName
-#   }
-#   return $userPrompt
-# }
+function prompt {
+  try {
+    $branch = git rev-parse --abbrev-ref HEAD
+    if ($branch -eq "HEAD") { $branch = git rev-parse --short HEAD }
+  } catch {}
+  if ($branch) { $branch = " $branch" }
+  $userPrompt = "$('' * ($nestedPromptLevel + 1)) "
+  $path = "$($executionContext.SessionState.Path.CurrentLocation)"
+  Write-Host "$env:computername ".toLower() -NoNewline -ForegroundColor Magenta
+  Write-Host $path -NoNewline -ForegroundColor Blue
+  Write-Host "$branch" -NoNewLine -ForegroundColor Green
+  return $userPrompt
+}
