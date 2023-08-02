@@ -1,15 +1,15 @@
 {
-  "name": "onedark",
-  "displayName": "onedark",
+  "name": "Onedark",
+  "displayName": "Onedark",
   "version": "0.0.1",
   "engines": {
     "vscode": ">=0.9.0-pre.1"
   },
-  "publisher": "kostis",
+  "publisher": "Kostis",
   "contributes": {
     "themes": [
       {
-        "label": "onedark",
+        "label": "Onedark",
         "path": "./themes/onedark.json"
       }
     ]
