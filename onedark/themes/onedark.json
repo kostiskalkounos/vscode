@@ -541,6 +541,8 @@
     "editor.wordHighlightBorder": "#5c6370",
     "editor.wordHighlightStrongBackground": "#abb2bf26",
     "editor.wordHighlightStrongBorder": "#5c6370",
+    "editorBracketMatch.background": "#c9a0c200",
+    "editorBracketMatch.border": "#c9a0c2",
     "editorCursor.background": "#282c34",
     "editorCursor.foreground": "#abb2bf",
     "editorError.foreground": "#e06c75",
