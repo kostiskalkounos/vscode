@@ -5,14 +5,34 @@
   "editor.formatOnSave": true,
   "editor.guides.indentation": false,
   "editor.hideCursorInOverviewRuler": true,
-  "editor.lineNumbers": "relative",
+  "settings.cycle": [
+    {
+      "id": "lineNumbers",
+      "values": [
+        {
+          "editor.lineNumbers": "off",
+          "editor.folding": false,
+          "editor.glyphMargin": false
+        },
+        {
+          "editor.lineNumbers": "relative",
+          "editor.folding": true,
+          "editor.glyphMargin": true
+        }
+      ]
+    }
+  ],
   "editor.links": false,
   "editor.matchBrackets": "near",
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": false,
   "editor.overviewRulerBorder": false,
   "editor.parameterHints.enabled": false,
-  "editor.quickSuggestions": false,
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "strings": "off",
+    "other": "off"
+  },
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
   "editor.tabSize": 2,
@@ -20,27 +40,26 @@
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
   "python.analysis.completeFunctionParens": true,
-  "remote.SSH.lockfilesInTmp": true,
-  "remote.SSH.remotePlatform": {
-    "ncerndobedev6694.etv.nce.amadeus.net": "linux",
-    "ncerndobedev6902.etv.nce.amadeus.net": "linux"
-  },
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.allowChords": false,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.rightClickBehavior": "paste",
   "terminal.integrated.scrollback": 10000,
   "typescript.suggest.completeFunctionCalls": true,
-  "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
-  "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\kkalkounos\\Projects\\vscode\\code.vim",
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "~/Projects/vscode/code.vim",
   "window.menuBarVisibility": "compact",
-  "window.zoomLevel": 1,
-  "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "onedark",
   "workbench.editor.tabCloseButton": "off",
   "workbench.editor.untitled.hint": "hidden",
+  "workbench.layoutControl.enabled": false,
   "workbench.list.automaticKeyboardNavigation": false,
-  "workbench.preferredDarkColorTheme": "onedark",
+  "workbench.preferredDarkColorTheme": "Onedark",
   "workbench.startupEditor": "none",
-  "workbench.tree.renderIndentGuides": "none"
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.colorTheme": "Onedark",
+  "workbench.editor.showTabs": false,
+  "editor.lineNumbers": "off",
+  "editor.folding": false,
+  "editor.glyphMargin": false,
+  "workbench.activityBar.visible": false,
 }

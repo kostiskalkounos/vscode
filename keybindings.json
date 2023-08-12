@@ -33,91 +33,91 @@
     "command": "-workbench.action.quickOpen"
   },
   {
-    "key": "ctrl+1",
+    "key": "cmd+1",
     "command": "-workbench.action.focusFirstEditorGroup"
   },
   {
-    "key": "ctrl+2",
+    "key": "cmd+2",
     "command": "-workbench.action.focusSecondEditorGroup"
   },
   {
-    "key": "ctrl+3",
+    "key": "cmd+3",
     "command": "-workbench.action.focusThirdEditorGroup"
   },
   {
-    "key": "ctrl+4",
+    "key": "cmd+4",
     "command": "-workbench.action.focusFourthEditorGroup"
   },
   {
-    "key": "ctrl+5",
+    "key": "cmd+5",
     "command": "-workbench.action.focusFifthEditorGroup"
   },
   {
-    "key": "ctrl+6",
+    "key": "cmd+6",
     "command": "-workbench.action.focusSixthEditorGroup"
   },
   {
-    "key": "ctrl+7",
+    "key": "cmd+7",
     "command": "-workbench.action.focusSeventhEditorGroup"
   },
   {
-    "key": "ctrl+8",
+    "key": "cmd+8",
     "command": "-workbench.action.focusEighthEditorGroup"
   },
   {
-    "key": "ctrl+1",
+    "key": "cmd+1",
     "command": "workbench.action.focusActiveEditorGroup"
   },
   {
-    "key": "ctrl+2",
+    "key": "cmd+2",
     "command": "workbench.action.focusActiveEditorGroup"
   },
   {
-    "key": "ctrl+3",
+    "key": "cmd+3",
     "command": "workbench.action.focusActiveEditorGroup"
   },
   {
-    "key": "ctrl+4",
+    "key": "cmd+4",
     "command": "workbench.action.focusActiveEditorGroup"
   },
   {
-    "key": "ctrl+5",
+    "key": "cmd+5",
     "command": "workbench.action.focusActiveEditorGroup"
   },
   {
-    "key": "ctrl+shift+0",
+    "key": "cmd+shift+0",
     "command": "workbench.action.zoomReset"
   },
   {
-    "key": "ctrl+numpad0",
+    "key": "cmd+numpad0",
     "command": "-workbench.action.zoomReset"
   },
   {
-    "key": "ctrl+numpad_add",
+    "key": "cmd+numpad_add",
     "command": "-workbench.action.zoomIn"
   },
   {
-    "key": "ctrl+=",
+    "key": "cmd+=",
     "command": "-workbench.action.zoomIn"
   },
   {
-    "key": "ctrl+numpad_subtract",
+    "key": "cmd+numpad_subtract",
     "command": "-workbench.action.zoomOut"
   },
   {
-    "key": "ctrl+-",
+    "key": "cmd+-",
     "command": "-workbench.action.zoomOut"
   },
   {
-    "key": "ctrl+=",
+    "key": "cmd+=",
     "command": "editor.action.fontZoomIn"
   },
   {
-    "key": "ctrl+-",
+    "key": "cmd+-",
     "command": "editor.action.fontZoomOut"
   },
   {
-    "key": "ctrl+0",
+    "key": "cmd+0",
     "command": "editor.action.fontZoomReset"
   }
 ]
