@@ -39,9 +39,9 @@ xnoremap <unique> <silent> <Space>v <Cmd>call VSCodeNotifyVisual('editor.action.
 
 nnoremap <unique> <silent> <Space>' <Cmd>call VSCodeNotify('workbench.action.splitEditorRight')<CR>
 nnoremap <unique> <silent> <Space>- <Cmd>call VSCodeNotify('workbench.action.splitEditorDown')<CR>
+nnoremap <unique> <silent> <Space><Space> <Cmd>call VSCodeNotify('workbench.action.quickOpenPreviousRecentlyUsedEditor')<CR>
 nnoremap <unique> <silent> <Space>= <Cmd>call VSCodeNotify('workbench.action.splitEditorDown')<CR>
 nnoremap <unique> <silent> <Space>\ <Cmd>call VSCodeNotify('workbench.action.splitEditorRight')<CR>
-nnoremap <unique> <silent> <Space><Space> <Cmd>call VSCodeNotify('workbench.action.quickOpenPreviousRecentlyUsedEditor')<CR>
 
 nnoremap <unique> <silent> <Space>0 <Cmd>call VSCodeNotify('workbench.action.lastEditorInGroup')<CR>
 nnoremap <unique> <silent> <Space>1 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex1')<CR>
@@ -64,12 +64,13 @@ nnoremap <unique> <silent> <Space>s <Cmd>call VSCodeNotify('workbench.action.qui
 nnoremap <unique> <silent> <Space>w <Cmd>call VSCodeNotify('workbench.action.files.save')<CR>
 nnoremap <unique> <silent> <Space>x <Cmd>call VSCodeNotify('workbench.action.files.saveFiles')<CR>
 
+nnoremap <unique> <silent> <Space>; <Cmd>call VSCodeNotify('workbench.action.toggleSidebarVisibility')<CR>
 nnoremap <unique> <silent> <Space>B <Cmd>call VSCodeNotify('editor.action.toggleMinimap')<CR>
+nnoremap <unique> <silent> <Space>U <Cmd>call VSCodeNotify('settings.cycle.lineNumbers')<CR>
 nnoremap <unique> <silent> <Space>b <Cmd>call VSCodeNotify('workbench.action.toggleStatusbarVisibility')<CR>
 nnoremap <unique> <silent> <Space>d <Cmd>call VSCodeNotify('workbench.action.toggleActivityBarVisibility')<CR>
 nnoremap <unique> <silent> <Space>f <Cmd>call VSCodeNotify('workbench.view.explorer')<CR>
 nnoremap <unique> <silent> <Space>m <Cmd>call VSCodeNotify('workbench.action.toggleMenuBar')<CR>
-nnoremap <unique> <silent> <Space>; <Cmd>call VSCodeNotify('workbench.action.toggleSidebarVisibility')<CR>
 nnoremap <unique> <silent> <Space>t <Cmd>call VSCodeNotify('workbench.action.terminal.toggleTerminal')<CR>
 nnoremap <unique> <silent> <Space>u <Cmd>call VSCodeNotify('workbench.action.toggleTabsVisibility')<CR>
 nnoremap <unique> <silent> <Space>y <Cmd>call VSCodeNotify('workbench.actions.view.problems')<CR>
@@ -85,6 +86,7 @@ nnoremap <unique> <silent> <Space>l <Cmd>call VSCodeNotify('workbench.action.nav
 
 nnoremap <unique> <silent>gc <Cmd>call VSCodeNotify('editor.action.commentLine')<CR>
 nnoremap <unique> <silent>gr <Cmd>call VSCodeNotify('editor.action.goToReferences')<CR>
+
 nnoremap <unique> <silent> <Esc> :nohlsearch<cr>
 nnoremap <unique> <silent> j gj
 nnoremap <unique> <silent> k gk
