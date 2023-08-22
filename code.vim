@@ -1,4 +1,5 @@
 set ignorecase
+set shownomode
 set notimeout ttimeout ttimeoutlen=0
 
 augroup highlightYank
@@ -23,19 +24,19 @@ endfunction
 
 nnoremap <unique> <silent> <Space><Tab> <Cmd>call VSCodeNotify('clangd.switchheadersource')<CR>
 nnoremap <unique> <silent> <Space>D <Cmd>call VSCodeNotify('workbench.view.debug')<CR>
-nnoremap <unique> <silent> <Space>E vip <Cmd>call VSCodeNotifyVisual('editor.action.sortLinesDescending', 0)<CR>
+nnoremap <unique> <silent> <Space>E <Cmd>call VSCodeNotifyVisual('editor.action.sortLinesDescending', 1)<CR><ESC>
 nnoremap <unique> <silent> <Space>G <Cmd>call VSCodeNotify('workbench.view.scm')<CR>
 nnoremap <unique> <silent> <Space>R <Cmd>call VSCodeNotify('clangd.restart')<CR>
-nnoremap <unique> <silent> <Space>c <Cmd>call VSCodeNotify('editor.action.clipboardCopyAction')<CR>
-nnoremap <unique> <silent> <Space>e vip <Cmd>call VSCodeNotifyVisual('editor.action.sortLinesAscending', 0)<CR>
+nnoremap <unique> <silent> <Space>c <Cmd>call VSCodeNotify('editor.action.clipboardCopyAction')<CR><ESC>
+nnoremap <unique> <silent> <Space>e <Cmd>call VSCodeNotifyVisual('editor.action.sortLinesAscending', 1)<CR><ESC>
 nnoremap <unique> <silent> <Space>g <Cmd>call VSCodeNotify('editor.action.quickFix')<CR>
 nnoremap <unique> <silent> <Space>r <Cmd>call VSCodeNotify('editor.action.rename')<CR>
 nnoremap <unique> <silent> <Space>v <Cmd>call VSCodeNotify('editor.action.clipboardPasteAction')<CR>
 nnoremap <unique> <silent> <Space>z <Cmd>call VSCodeNotify('editor.toggleFold')<CR>
-xnoremap <unique> <silent> <Space>E <Cmd>call VSCodeNotifyVisual('editor.action.sortLinesDescending', 0)<CR>
-xnoremap <unique> <silent> <Space>c <Cmd>call VSCodeNotifyVisual('editor.action.clipboardCopyAction', 0)<CR>
-xnoremap <unique> <silent> <Space>e <Cmd>call VSCodeNotifyVisual('editor.action.sortLinesAscending', 0)<CR>
-xnoremap <unique> <silent> <Space>v <Cmd>call VSCodeNotifyVisual('editor.action.clipboardPasteAction', 0)<CR>
+xnoremap <unique> <silent> <Space>E <Cmd>call VSCodeNotifyVisual('editor.action.sortLinesDescending', 1)<CR><ESC>
+xnoremap <unique> <silent> <Space>c <Cmd>call VSCodeNotifyVisual('editor.action.clipboardCopyAction', 1)<CR><ESC>
+xnoremap <unique> <silent> <Space>e <Cmd>call VSCodeNotifyVisual('editor.action.sortLinesAscending', 1)<CR><ESC>
+xnoremap <unique> <silent> <Space>v <Cmd>call VSCodeNotifyVisual('editor.action.clipboardPasteAction', 1)<CR><ESC>
 
 nnoremap <unique> <silent> <Space>' <Cmd>call VSCodeNotify('workbench.action.splitEditorRight')<CR>
 nnoremap <unique> <silent> <Space>- <Cmd>call VSCodeNotify('workbench.action.splitEditorDown')<CR>
