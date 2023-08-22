@@ -1,41 +1,44 @@
 {
-  "breadcrumbs.enabled": false,
-  "editor.bracketPairColorization.enabled": false,
-  "editor.cursorBlinking": "solid",
-  "editor.formatOnSave": true,
-  "editor.guides.indentation": false,
-  "editor.hideCursorInOverviewRuler": true,
   "settings.cycle": [
     {
       "id": "lineNumbers",
       "values": [
         {
-          "editor.lineNumbers": "off",
-          "editor.folding": false,
-          "editor.glyphMargin": false
+          "editor.lineNumbers": "relative",
+          "editor.folding": true,
+          "editor.glyphMargin": true
         },
         {
-          "editor.lineNumbers": "relative",
+          "editor.lineNumbers": "off",
           "editor.folding": true,
           "editor.glyphMargin": true
         }
       ]
     }
   ],
+  "breadcrumbs.enabled": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.cursorBlinking": "solid",
+  "editor.folding": true,
+  "editor.formatOnSave": true,
+  "editor.glyphMargin": true,
+  "editor.guides.indentation": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.lineNumbers": "relative",
   "editor.links": false,
   "editor.matchBrackets": "near",
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": false,
   "editor.overviewRulerBorder": false,
   "editor.parameterHints.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.tabSize": 2,
   "editor.quickSuggestions": {
     "comments": "off",
     "strings": "off",
     "other": "off"
   },
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "hidden",
-  "editor.tabSize": 2,
   "explorer.incrementalNaming": "smart",
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
@@ -47,19 +50,16 @@
   "terminal.integrated.scrollback": 10000,
   "typescript.suggest.completeFunctionCalls": true,
   "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.darwin": "~/Projects/vscode/code.vim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "~/Projects/personal/vscode/code.vim",
   "window.menuBarVisibility": "compact",
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Onedark",
+  "workbench.editor.showTabs": false,
   "workbench.editor.tabCloseButton": "off",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.layoutControl.enabled": false,
   "workbench.list.automaticKeyboardNavigation": false,
   "workbench.preferredDarkColorTheme": "Onedark",
   "workbench.startupEditor": "none",
-  "workbench.tree.renderIndentGuides": "none",
-  "workbench.colorTheme": "Onedark",
-  "workbench.editor.showTabs": false,
-  "editor.lineNumbers": "off",
-  "editor.folding": false,
-  "editor.glyphMargin": false,
-  "workbench.activityBar.visible": false,
+  "workbench.tree.renderIndentGuides": "none"
 }
