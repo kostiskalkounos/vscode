@@ -1,10 +1,11 @@
 set ignorecase
-set shownomode
+set noshowmode
 set notimeout ttimeout ttimeoutlen=0
+set smartcase
 
 augroup highlightYank
   autocmd!
-  au TextYankPost * silent! lua vim.highlight.on_yank { higroup="Visual", timeout=150, on_macro=true }
+  au TextYankPost * silent! lua vim.highlight.on_yank { higroup="IncSearch", timeout=150, on_macro=true }
 augroup end
 
 function! VSCodeNotifyVisual(cmd, leaveSelection, ...)
@@ -75,6 +76,7 @@ nnoremap <unique> <silent> <Space>m <Cmd>call VSCodeNotify('workbench.action.tog
 nnoremap <unique> <silent> <Space>t <Cmd>call VSCodeNotify('workbench.action.terminal.toggleTerminal')<CR>
 nnoremap <unique> <silent> <Space>u <Cmd>call VSCodeNotify('workbench.action.toggleTabsVisibility')<CR>
 nnoremap <unique> <silent> <Space>y <Cmd>call VSCodeNotify('workbench.actions.view.problems')<CR>
+vnoremap <unique> <silent> <Space>; <Cmd>call VSCodeNotify('workbench.action.toggleSidebarVisibility')<CR>
 
 nnoremap <unique> <silent> <Space>H <Cmd>call VSCodeNotify('workbench.action.moveActiveEditorGroupLeft')<CR>
 nnoremap <unique> <silent> <Space>J <Cmd>call VSCodeNotify('workbench.action.moveActiveEditorGroupDown')<CR>
@@ -86,6 +88,7 @@ nnoremap <unique> <silent> <Space>k <Cmd>call VSCodeNotify('workbench.action.nav
 nnoremap <unique> <silent> <Space>l <Cmd>call VSCodeNotify('workbench.action.navigateRight')<CR>
 
 nnoremap <unique> <silent>gc <Cmd>call VSCodeNotify('editor.action.commentLine')<CR>
+nnoremap <unique> <silent>gi <Cmd>call VSCodeNotify('editor.action.goToImplementation')<CR>
 nnoremap <unique> <silent>gr <Cmd>call VSCodeNotify('editor.action.goToReferences')<CR>
 
 nnoremap <unique> <silent> <Esc> :nohlsearch<cr>

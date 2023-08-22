@@ -33,6 +33,7 @@
   "editor.parameterHints.enabled": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
+  "editor.selectionHighlight": false,
   "editor.tabSize": 2,
   "editor.quickSuggestions": {
     "comments": "off",
@@ -40,6 +41,9 @@
     "other": "off"
   },
   "explorer.incrementalNaming": "smart",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
   "python.analysis.completeFunctionParens": true,
@@ -52,7 +56,6 @@
   "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
   "vscode-neovim.neovimInitVimPaths.darwin": "~/Projects/personal/vscode/code.vim",
   "window.menuBarVisibility": "compact",
-  "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Onedark",
   "workbench.editor.showTabs": false,
   "workbench.editor.tabCloseButton": "off",
@@ -61,5 +64,6 @@
   "workbench.list.automaticKeyboardNavigation": false,
   "workbench.preferredDarkColorTheme": "Onedark",
   "workbench.startupEditor": "none",
-  "workbench.tree.renderIndentGuides": "none"
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.activityBar.visible": false
 }
