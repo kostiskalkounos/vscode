@@ -32,6 +32,7 @@
     {
       "name": "fg",
       "scope": [
+        "storage.modifier.import.groovy",
         "string.unquoted.plain.out.yaml",
         "variable.other.object.access.cpp"
       ],
@@ -237,6 +238,7 @@
       "name": "ice",
       "scope": [
         "constant.language.nullptr.cpp",
+        "constant.other.groovy",
         "meta.preprocessor.macro.cpp",
         "meta.preprocessor.pragma.cpp"
       ],
@@ -385,6 +387,7 @@
         "meta.diff.header.to-file",
         "meta.function-call.generic.python",
         "meta.function.decorator.python",
+        "meta.method.groovy",
         "meta.require",
         "punctuation.definition.from-file.diff",
         "punctuation.definition.to-file.diff",
@@ -479,6 +482,7 @@
         "rgb-value",
         "source.json meta.structure.array.json > constant.language.json",
         "source.json meta.structure.dictionary.json > constant.language.json",
+        "storage.type.annotation.groovy",
         "string.regexp",
         "support.class.component.js",
         "support.function",
