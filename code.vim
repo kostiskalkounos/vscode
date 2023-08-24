@@ -90,6 +90,7 @@ nnoremap <unique> <silent> <Space>l <Cmd>call VSCodeNotify('workbench.action.nav
 nnoremap <unique> <silent>gc <Cmd>call VSCodeNotify('editor.action.commentLine')<CR>
 nnoremap <unique> <silent>gi <Cmd>call VSCodeNotify('editor.action.goToImplementation')<CR>
 nnoremap <unique> <silent>gr <Cmd>call VSCodeNotify('editor.action.goToReferences')<CR>
+vnoremap <unique> <silent>gc <ESC><Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR><ESC>
 
 nnoremap <unique> <silent> <Esc> :nohlsearch<cr>
 nnoremap <unique> <silent> j gj
