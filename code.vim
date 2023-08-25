@@ -87,6 +87,12 @@ nnoremap <unique> <silent> <Space>j <Cmd>call VSCodeNotify('workbench.action.nav
 nnoremap <unique> <silent> <Space>k <Cmd>call VSCodeNotify('workbench.action.navigateUp')<CR>
 nnoremap <unique> <silent> <Space>l <Cmd>call VSCodeNotify('workbench.action.navigateRight')<CR>
 
+nnoremap <unique> <silent><C-j> <Cmd>call VSCodeNotify('editor.action.marker.next')<CR>
+nnoremap <unique> <silent><C-k> <Cmd>call VSCodeNotify('editor.action.marker.prev')<CR>
+
+nnoremap <silent><C-l> <Cmd>call VSCodeNotify('editor.action.marker.prevInFiles')<CR>
+nnoremap <unique> <silent><C-h> <Cmd>call VSCodeNotify('editor.action.marker.nextInFiles')<CR>
+
 nnoremap <unique> <silent>gc <Cmd>call VSCodeNotify('editor.action.commentLine')<CR>
 nnoremap <unique> <silent>gi <Cmd>call VSCodeNotify('editor.action.goToImplementation')<CR>
 nnoremap <unique> <silent>gr <Cmd>call VSCodeNotify('editor.action.goToReferences')<CR>
