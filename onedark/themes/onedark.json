@@ -74,7 +74,6 @@
         "constant.numeric.decimal.asm.x86_64",
         "emphasis md",
         "keyword",
-        "keyword.control",
         "keyword.operator.address.go",
         "keyword.operator.arithmetic.go",
         "keyword.operator.assignment.c",
@@ -237,10 +236,11 @@
     {
       "name": "ice",
       "scope": [
-        "constant.language.nullptr.cpp",
+        "constant",
         "constant.other.groovy",
         "meta.preprocessor.macro.cpp",
-        "meta.preprocessor.pragma.cpp"
+        "meta.preprocessor.pragma.cpp",
+        "support.variable.magic.python"
       ],
       "settings": {
         "foreground": "#96bfd3"
@@ -344,8 +344,8 @@
     {
       "name": "orange",
       "scope": [
-        "constant",
-        "constant.language.python",
+        "constant.language.false.cpp",
+        "constant.language.true.cpp",
         "constant.numeric",
         "control.elements",
         "entity.other.attribute-name.class.css",
@@ -409,6 +409,7 @@
       "scope": [
         "entity.name.tag.localname.xml",
         "entity.name.tag.yaml",
+        "keyword.control",
         "meta.attribute.python",
         "punctuation.support.type.property-name.begin.json",
         "punctuation.support.type.property-name.begin.json.comments",
@@ -493,7 +494,6 @@
         "support.type.posix-reserved.cpp",
         "support.type.python",
         "support.type.vendored.property-name.css",
-        "support.variable.magic.python",
         "variable.other.constant.object.js",
         "variable.other.readwrite.alias.js"
       ],
