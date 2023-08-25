@@ -41,7 +41,7 @@ xnoremap <unique> <silent> <Space>v <Cmd>call VSCodeNotifyVisual('editor.action.
 
 nnoremap <unique> <silent> <Space>' <Cmd>call VSCodeNotify('workbench.action.splitEditorRight')<CR>
 nnoremap <unique> <silent> <Space>- <Cmd>call VSCodeNotify('workbench.action.splitEditorDown')<CR>
-nnoremap <unique> <silent> <Space><Space> <Cmd>call VSCodeNotify('workbench.action.quickOpenPreviousRecentlyUsedEditor')<CR>
+nnoremap <unique> <silent> <Space><Space> <Cmd>call VSCodeNotify('workbench.action.quickOpenPreviousRecentlyUsedEditor')<CR> \| <Cmd>call VSCodeNotify('workbench.action.acceptSelectedQuickOpenItem')<CR>
 nnoremap <unique> <silent> <Space>= <Cmd>call VSCodeNotify('workbench.action.splitEditorDown')<CR>
 nnoremap <unique> <silent> <Space>\ <Cmd>call VSCodeNotify('workbench.action.splitEditorRight')<CR>
 
