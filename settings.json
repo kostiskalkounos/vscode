@@ -54,7 +54,7 @@
   "terminal.integrated.scrollback": 10000,
   "typescript.suggest.completeFunctionCalls": true,
   "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.darwin": "~/Projects/personal/vscode/code.vim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/vscode/code.vim",
   "window.menuBarVisibility": "compact",
   "workbench.colorTheme": "Onedark",
   "workbench.editor.showTabs": false,
